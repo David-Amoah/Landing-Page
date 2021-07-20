@@ -1,0 +1,161 @@
+body {
+  font-family: "Cabin", sans-serif;
+}
+
+h1,
+h2,
+h4 {
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  max-width: 98%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  margin: 0;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+/* ads seciton */
+.ads {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 0.4rem;
+  width: 98%;
+}
+.ads span {
+  text-decoration: underline;
+}
+/* end ads section */
+
+/* header */
+header {
+  background-color: burlywood;
+}
+header .container {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container nav {
+}
+
+header .container button {
+  padding: 0.8rem;
+  color: white;
+  background-color: black;
+  border-radius: 8px;
+  font-weight: 900;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+/* end header */
+
+/* banner */
+.banner {
+  background-color: burlywood;
+  height: 75vh;
+  max-width: 100%;
+}
+
+.banner .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.banner .container .box {
+  width: 400px;
+  height: 450px;
+}
+.banner .container .box {
+  background-image: url(../img/Hero\ Image\ without\ Box.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  position: relative;
+}
+.banner .container .box .inner {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border-radius: 20px;
+  padding: 1rem;
+}
+.banner .container .box .inner P {
+  margin: 10px;
+}
+.banner .container .box .inner button {
+  padding: 0.8rem 2rem;
+  margin: 10px 10px;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* end banner*/
+
+/* logos */
+.logos img {
+  width: 100px;
+}
+.logos .container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  padding: 10px;
+  align-items: center;
+}
+/* end logos */
+
+/* mini_section-1 */
+
+#mini_section-1 .cover .box {
+  width: 500px;
+  height: 400px;
+  background-image: url(../img/Phone\ Mockup.png);
+  background-position: center right;
+  background-size: cover;
+}
+#mini_section-1 .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/* end mini_seciton-1 */
+
+/* footer */
+footer {
+  background-color: black;
+  padding: 5rem;
+}
+footer .container {
+  color: white;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+}
+footer .container a {
+  color: white;
+  display: block;
+  margin: 10px 0px;
+}
+/* end footer */
