@@ -26,16 +26,33 @@ p {
 .box {
   width: 100px;
   height: 100px;
+  /* background-color: red; */
 }
 
 /* ads seciton */
 .ads {
-  text-align: center;
   background-color: black;
   color: white;
-  padding: 0.4rem;
-  width: 98%;
+  display: flex;
+  padding: 0.7rem;
+  text-align: center;
+  justify-content: space-around;
+  max-width: 100%;
 }
+
+.ads .close {
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.close.active {
+  display: none;
+}
+
+.ads.active {
+  display: none;
+}
+
 .ads span {
   text-decoration: underline;
 }
@@ -43,16 +60,29 @@ p {
 
 /* header */
 header {
-  background-color: burlywood;
+  background-color: rgb(247, 240, 230);
 }
 header .container {
-  height: 20vh;
   display: flex;
+  padding: 1rem 0rem;
   align-items: center;
   justify-content: space-between;
+  font-weight: 900;
 }
 
 header .container nav {
+  display: flex;
+  gap: 10%;
+}
+
+header .container nav a:hover {
+  color: burlywood;
+}
+
+header .container .login {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 header .container button {
@@ -69,7 +99,7 @@ header .container button {
 
 /* banner */
 .banner {
-  background-color: burlywood;
+  background-color: rgb(247, 240, 230);
   height: 75vh;
   max-width: 100%;
 }
@@ -114,6 +144,44 @@ header .container button {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.banner .container .info {
+  padding: 2rem 0rem;
+}
+
+.banner .container .info h1 {
+  line-height: 2;
+  font-size: 2.8rem;
+}
+
+.banner .container .info p {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+}
+
+.banner .container .info .input {
+  margin: 20px 0px;
+}
+
+.banner .container .info input {
+  padding: 0.8rem;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+.banner .container .info button {
+  padding: 0.8rem;
+  color: white;
+  font-weight: 900;
+  background-color: black;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 /* end banner*/
 
 /* logos */
@@ -130,6 +198,10 @@ header .container button {
 
 /* mini_section-1 */
 
+#mini_section-1 {
+  background-color: rgb(247, 240, 230);
+}
+
 #mini_section-1 .cover .box {
   width: 500px;
   height: 400px;
@@ -142,6 +214,24 @@ header .container button {
   grid-template-columns: 1fr 1fr;
 }
 /* end mini_seciton-1 */
+
+/* teditor */
+.teditor {
+  padding: 2rem 0;
+}
+.teditor .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.teditor .container .box {
+  width: 600px;
+  height: 300px;
+  background-image: url(../img/Text\ Editor.png);
+  background-size: cover;
+  background-position: contain;
+}
+/* end teditor */
 
 /* footer */
 footer {
